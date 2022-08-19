@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2FB67C"
+    android:backgroundTint="#4DD57A"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="359dp"
+        android:layout_height="105dp"
+        android:background="@color/purple_200"
+        android:backgroundTint="@color/purple_200"
+        android:foregroundTint="#DC1414"
+        android:text="Button"
+        android:textColor="#1EEDCE"
+        app:iconTint="#C6A62E2E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="170dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
