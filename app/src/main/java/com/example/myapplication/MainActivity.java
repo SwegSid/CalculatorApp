@@ -27,6 +27,49 @@ public class MainActivity extends AppCompatActivity {
 
         int sum = one + two;
 
-        answer.setText("" + answer);
+        answer.setText("" + sum);
     }
+
+    @SuppressLint("SetTextI18n")
+    public void subtraction(View view){
+        EditText number1 = findViewById(R.id.number1);
+        EditText number2 = findViewById(R.id.number2);
+        TextView answer = findViewById(R.id.answer);
+
+        int one = Integer.parseInt(number1.getText().toString());
+        int two = Integer.parseInt(number2.getText().toString());
+
+        int difference = one - two;
+
+        answer.setText("" + difference);
+    }
+
+    @SuppressLint("SetTextI18n")
+    public void multiplication(View view){
+        EditText number1 = findViewById(R.id.number1);
+        EditText number2 = findViewById(R.id.number2);
+        TextView answer = findViewById(R.id.answer);
+
+        int one = Integer.parseInt(number1.getText().toString());
+        int two = Integer.parseInt(number2.getText().toString());
+
+        int product = one * two;
+
+        answer.setText("" + product);
+    }
+
+    @SuppressLint("SetTextI18n")
+    public void division(View view){
+        EditText number1 = findViewById(R.id.number1);
+        EditText number2 = findViewById(R.id.number2);
+        TextView answer = findViewById(R.id.answer);
+
+        int one = Integer.parseInt(number1.getText().toString());
+        int two = Integer.parseInt(number2.getText().toString());
+
+        double product = (double)(one)/two;
+
+        answer.setText("" + product);
+    }
+
 }
