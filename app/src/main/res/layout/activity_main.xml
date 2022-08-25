@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2FB67C"
-    android:backgroundTint="#4DD57A"
+    android:background="@color/gold"
+    android:backgroundTint="#D5C74D"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/divide"
         android:layout_width="359dp"
         android:layout_height="105dp"
-        android:background="@color/purple_200"
-        android:backgroundTint="@color/purple_200"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
         android:foregroundTint="#DC1414"
         android:onClick="division"
         android:text="÷"
@@ -28,27 +28,31 @@
 
     <Button
         android:id="@+id/add"
+        style="@android:style/Widget.Button"
         android:layout_width="359dp"
         android:layout_height="105dp"
-        android:background="@color/purple_200"
-        android:backgroundTint="@color/purple_200"
+        android:background="@color/red"
+        android:backgroundTint="@color/red"
         android:foregroundTint="#DC1414"
         android:onClick="addition"
         android:text="+"
-        android:textColor="#1EEDCE"
+        android:textColor="#64FFDA"
         android:textSize="48sp"
-        app:iconTint="#C6A62E2E"
+        app:iconTint="@color/red"
+        app:iconTintMode="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintVertical_bias="0.242"
+        app:strokeColor="#FF0000" />
 
     <Button
         android:id="@+id/subtract"
+        style="@android:style/Widget.Button"
         android:layout_width="359dp"
         android:layout_height="105dp"
-        android:background="@color/purple_200"
+        android:background="@color/red"
         android:backgroundTint="@color/purple_200"
         android:foregroundTint="#DC1414"
         android:onClick="subtraction"
